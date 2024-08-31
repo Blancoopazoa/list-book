@@ -1,7 +1,15 @@
+export interface Author {
+  name: string;
+  otherBooks: string[];
+}
+
 export interface Book {
-  id: number;
   title: string;
-  author: string;
+  pages: number;
   genre: string;
-  inReadingList: boolean;
+  cover: string;
+  synopsis: string;
+  year: number;
+  ISBN: string;
+  author: Author;
 }
